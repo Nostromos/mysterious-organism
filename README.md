@@ -1,5 +1,23 @@
 # Codecademy Challenge Project: Mysterious Organism
+
+## Description
 Repo for the Mysterious Organism Codecademy challenge project.
+
+### Why'd I build this?
+I'm working on the codecademy full stack path and realized I need to start putting my projects on github. 
+
+### What problem does this solve?
+This helps me learn more about javascript, git, and is great practice.
+
+### What did I learn?
+I'll come back to this section later.
+
+### What makes this special? 
+Nothing yet, but I'll 'build it for real' as I go through it so I think I can contribute something unique.
+
+----------------------
+
+## Overview
 
 Look over the starter code. There are two helper functions: `returnRandBase()` and `mockUpStrand()`.
 
@@ -22,30 +40,25 @@ You’ll use these helper functions later to create your objects that represent 
     - [ ] `.mutate()` is responsible for randomly selecting a base in the object’s dna property and changing the current base to a different base. Then `.mutate()` will return the object’s dna.
     - [ ] For example, if the randomly selected base is the 1st base and it is 'A', the base must be changed to 'T', 'C', or 'G'. But it cannot be 'A' again.
 
-- [ ] Your research team wants to be able to compare the DNA sequences of different P. aequor. You’ll have to add a new method (.compareDNA()) to the returned object of the factory function.
-    - [ ] .compareDNA() has one parameter, another pAequor object.
+- [ ] Your research team wants to be able to compare the DNA sequences of different P. aequor. You’ll have to add a new method (`.compareDNA()`) to the returned object of the factory function.
+    - [ ] `.compareDNA()` has one parameter, another pAequor object.
     - [ ] The behavior of .compareDNA() is to compare the current pAequor‘s .dna with the passed in pAequor‘s .dna and compute how many bases are identical and in the same locations. .compareDNA() does not return anything, but prints a message that states the percentage of DNA the two objects have in common — use the .specimenNum to identify which pAequor objects are being compared.
 
-            For example:
+            `For example:
 
             ex1 = ['A', 'C', 'T', 'G']
             ex2 = ['C', 'A', 'T', 'T']
-            ex1 and ex2 only have the 3rd element in common ('T') and therefore, have 25% (1/4) of their DNA in common. The resulting message would read something along the lines of: specimen #1 and specimen #2 have 25% DNA in common.
+
+            ex1 and ex2 only have the 3rd element in common ('T') and therefore, have 25% (1/4) of their DNA in common. 
+            
+            The resulting message would read something along the lines of: specimen #1 and specimen #2 have 25% DNA in common.`
 
 - [ ] P. aequor have a likelier chance of survival if their DNA is made up of at least 60% 'C' or 'G' bases.
 - [ ] In the returned object of pAequorFactory(), add another method `.willLikelySurvive()`.
 - [ ] `.willLikelySurvive()` returns true if the object’s .dna array contains at least 60% 'C' or 'G' bases. Otherwise, `.willLikelySurvive()` returns false.
 
-7.
-With the factory function set up, your team requests that you create 30 instances of pAequor that can survive in their natural environment. Store these instances in an array for your team to study later.
+- [ ] With the factory function set up, your team requests that you create 30 instances of pAequor that can survive in their natural environment. Store these instances in an array for your team to study later.
 
-
-Project Extensions & Solution
-8.
-Great work! Visit our forums to compare your project to our sample solution code. You can also learn how to host your own solution on GitHub so you can share it with other learners! Your solution might look different from ours, and that’s okay! There are multiple ways to solve these projects, and you’ll learn more by seeing others’ code.
-
-9.
-If you’d like to challenge yourself further, you could consider the following:
-
-Create a .complementStrand() method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa. (Check the hint for more details)
-Use the .compareDNA() to find the two most related instances of pAequor.
+## Project Extensions
+- [ ] Create a .complementStrand() method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa. (Check the hint for more details)
+- [ ] Use the .compareDNA() to find the two most related instances of pAequor.
