@@ -43,12 +43,10 @@ You’ll use these helper functions later to create your objects that represent 
 - [x] Your research team wants to be able to compare the DNA sequences of different P. aequor. You’ll have to add a new method (`.compareDNA()`) to the returned object of the factory function.
     - [x] `.compareDNA()` has one parameter, another pAequor object.
     - [x] The behavior of `.compareDNA()` is to compare the current pAequor‘s `.dna` with the passed in pAequor‘s `.dna` and compute how many bases are identical and in the same locations. `.compareDNA()` does not return anything, but prints a message that states the percentage of DNA the two objects have in common — use the `.specimenNum` to identify which pAequor objects are being compared. For example:
-           
-            `
+                     
             ex1 = ['A', 'C', 'T', 'G']
             ex2 = ['C', 'A', 'T', 'T']
-            `
-
+        
         ex1 and ex2 only have the 3rd element in common ('T') and therefore, have 25% (1/4) of their DNA in common. The resulting message would read something along the lines of: specimen #1 and specimen #2 have 25% DNA in common.
 
 - [x] P. aequor have a likelier chance of survival if their DNA is made up of at least 60% 'C' or 'G' bases.
