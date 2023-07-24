@@ -56,5 +56,5 @@ You’ll use these helper functions later to create your objects that represent 
 - [x] With the factory function set up, your team requests that you create 30 instances of pAequor that can survive in their natural environment. Store these instances in an array for your team to study later.
 
 ## Project Extensions
-- [ ] Create a `.complementStrand()` method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa. (Check the hint for more details)
-- [ ] Use the `.compareDNA()` to find the two most related instances of pAequor.
+- [x] Create a `.complementStrand()` method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa. (Check the hint for more details)
+- [x] Use the `.compareDNA()` to find the two most related instances of pAequor.

@@ -47,7 +47,24 @@ const pAequorFactory = (uniqueNumber, dnaArray) => {
             return basePercentage > .6 ? true : false;
         },
         complementStrand () {
-
+            let complementaryStrand = [];
+            this.dna.forEach(base => {
+                switch (base) {
+                    case 'A':
+                        complementaryStrand.push('T');
+                        break;
+                    case 'T':
+                        complementaryStrand.push('A');
+                        break;
+                    case 'C': 
+                        complementaryStrand.push('G');
+                        break;
+                    case 'G':
+                        complementaryStrand.push('C');
+                        break;
+                }
+            })
+            return complementaryStrand;
         }
     }
 }
