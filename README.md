@@ -9,11 +9,11 @@ mockUpStrand() is used to generate an array containing 15 bases to represent a s
 
 You’ll use these helper functions later to create your objects that represent P. aequor.
 
-- [] Since you need to create multiple objects, create a factory function pAequorFactory() that has two parameters:
-    - [] The first parameter is a number (no two organisms should have the same number).
-    - [] The second parameter is an array of 15 DNA bases.
-    - [] pAequorFactory() should return an object that contains the properties specimenNum and dna that correspond to the parameters provided.
-    - [] You’ll also add more methods to this returned object in the later steps.
+- [ ] Since you need to create multiple objects, create a factory function pAequorFactory() that has two parameters:
+    - [ ] The first parameter is a number (no two organisms should have the same number).
+    - [ ] The second parameter is an array of 15 DNA bases.
+    - [ ] pAequorFactory() should return an object that contains the properties specimenNum and dna that correspond to the parameters provided.
+    - [ ] You’ll also add more methods to this returned object in the later steps.
 
 
 4.
