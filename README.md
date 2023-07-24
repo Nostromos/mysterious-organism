@@ -51,13 +51,12 @@ You’ll use these helper functions later to create your objects that represent 
 
         ex1 and ex2 only have the 3rd element in common ('T') and therefore, have 25% (1/4) of their DNA in common. The resulting message would read something along the lines of: specimen #1 and specimen #2 have 25% DNA in common.
 
-- [ ] P. aequor have a likelier chance of survival if their DNA is made up of at least 60% 'C' or 'G' bases.
-- [ ] In the returned object of pAequorFactory(), add another method `.willLikelySurvive()`.
-- [ ] `.willLikelySurvive()` returns true if the object’s .dna array contains at least 60% 'C' or 'G' bases. Otherwise, `.willLikelySurvive()` returns false.
+- [x] P. aequor have a likelier chance of survival if their DNA is made up of at least 60% 'C' or 'G' bases.
+- [x] In the returned object of pAequorFactory(), add another method `.willLikelySurvive()`.
+- [x] `.willLikelySurvive()` returns true if the object’s .dna array contains at least 60% 'C' or 'G' bases. Otherwise, `.willLikelySurvive()` returns false.
 
-- [ ] With the factory function set up, your team requests that you create 30 instances of pAequor that can survive in their natural environment. Store these instances in an array for your team to study later.
+- [x] With the factory function set up, your team requests that you create 30 instances of pAequor that can survive in their natural environment. Store these instances in an array for your team to study later.
 
 ## Project Extensions
-- [ ] Ensure that `pAequorFactory()` only accepts a unique number and only accepts an array of 15 bases
-- [ ] Create a .complementStrand() method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa. (Check the hint for more details)
-- [ ] Use the .compareDNA() to find the two most related instances of pAequor.
+- [ ] Create a `.complementStrand()` method to the factory function’s object that returns the complementary DNA strand. The rules are that 'A's match with 'T's and vice versa. Also, 'C's match with 'G's and vice versa. (Check the hint for more details)
+- [ ] Use the `.compareDNA()` to find the two most related instances of pAequor.

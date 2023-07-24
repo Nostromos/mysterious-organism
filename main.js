@@ -34,12 +34,36 @@ const pAequorFactory = (uniqueNumber, dnaArray) => {
             })
             const percentCommon = Math.trunc((commonCount / 15) * 100);
             console.log(`Specie ${this.specieNum} and Specie ${otherAeqObj.specieNum} have ${percentCommon}% DNA in common.`)
+        }, 
+        willLikelySurvive () {
+            let baseCount = 0;
+            this.dna.forEach(base => {
+                if (base === 'C' || base === 'G') {
+                    baseCount++;
+                }
+            })
+            const basePercentage = baseCount / 15;
+            //basePercentage > .6 ? console.log('survives') : console.log('dies');
+            return basePercentage > .6 ? true : false;
+        },
+        complementStrand () {
+
         }
     }
 }
-  
-let specie1 = pAequorFactory(1, mockUpStrand());
-let specie2 = pAequorFactory(2, mockUpStrand());
 
-specie2.compareDNA(specie1);
-  
+function createSurvivingSpecies (number) {
+    let survivors = [];
+    console.log('Creating survivors...');
+    for (let i = 0; survivors.length < number; i++) {
+        console.log(`Creating and testing survivor ${i}...`)
+        let potentialSurvivor = pAequorFactory(i, mockUpStrand());
+        if (potentialSurvivor.willLikelySurvive()) {
+            survivors.push(potentialSurvivor);
+            console.log(`Survivor ${i} survived.`)
+        } else {
+            console.log(`Survivor ${i} died.`)
+        }
+    }
+    return survivors;
+}
